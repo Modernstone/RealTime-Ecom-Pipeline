@@ -1,0 +1,153 @@
+# E-Commerce Pipeline Configuration
+# ================================
+
+database:
+  host: ${POSTGRES_HOST:-localhost}
+  port: ${POSTGRES_PORT:-5432}
+  name: ${POSTGRES_DB:-ecommerce_db}
+  user: ${POSTGRES_USER:-ecommerce_user}
+  password: ${POSTGRES_PASSWORD:-postgres}
+  pool_size: 10
+  max_overflow: 20
+  pool_timeout: 30
+  echo: false
+
+pipeline:
+  batch_size: 1000
+  max_retries: 3
+  retry_delay_seconds: 5
+  incremental: true
+  schedule_interval: "*/15 * * * *"  # Every 15 minutes
+  log_level: INFO
+  data_dir: data
+  raw_dir: data/raw
+  processed_dir: data/processed
+  error_dir: data/errors
+
+extraction:
+  sources:
+    customers:
+      file: customers.json
+      id_field: customer_id
+      required_fields:
+        - customer_id
+        - first_name
+        - last_name
+        - email
+    products:
+      file: products.json
+      id_field: product_id
+      required_fields:
+        - product_id
+        - product_name
+        - category_id
+        - price
+    orders:
+      file: orders.json
+      id_field: order_id
+      required_fields:
+        - order_id
+        - customer_id
+        - order_date
+        - order_status
+    order_items:
+      file: order_items.json
+      id_field: order_item_id
+      required_fields:
+        - order_item_id
+        - order_id
+        - product_id
+        - quantity
+        - unit_price
+    payments:
+      file: payments.json
+      id_field: payment_id
+      required_fields:
+        - payment_id
+        - order_id
+        - payment_method
+        - amount
+    inventory:
+      file: inventory.json
+      id_field: inventory_id
+      required_fields:
+        - inventory_id
+        - product_id
+        - stock_quantity
+
+validation:
+  rules:
+    max_price: 1000000
+    min_price: 0
+    max_quantity: 10000
+    valid_order_statuses:
+      - PENDING
+      - PROCESSING
+      - SHIPPED
+      - DELIVERED
+      - CANCELLED
+      - RETURNED
+    valid_payment_methods:
+      - UPI
+      - Credit Card
+      - Debit Card
+      - Net Banking
+      - Cash on Delivery
+      - Wallet
+    valid_payment_statuses:
+      - SUCCESS
+      - FAILED
+      - PENDING
+      - REFUNDED
+
+transformation:
+  currency_symbol: "₹"
+  date_format: "%Y-%m-%d"
+  datetime_format: "%Y-%m-%dT%H:%M:%S"
+  default_country: India
+  category_normalization:
+    electronics: Electronics
+    clothing: Clothing
+    footwear: Footwear
+    home & kitchen: Home & Kitchen
+    beauty: Beauty
+    sports: Sports
+    books: Books
+    accessories: Accessories
+
+dashboard:
+  title: "E-Commerce Analytics Dashboard"
+  theme: "dark"
+  refresh_interval_seconds: 300
+  default_date_range_days: 30
+  kpi_format:
+    currency: "₹{:,.0f}"
+    percentage: "{:.1f}%"
+    number: "{:,.0f}"
+
+logging:
+  version: 1
+  disable_existing_loggers: false
+  formatters:
+    standard:
+      format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    detailed:
+      format: "%(asctime)s - %(name)s - %(levelname)s - [%(filename)s:%(lineno)d] - %(message)s"
+  handlers:
+    console:
+      class: logging.StreamHandler
+      formatter: standard
+      level: INFO
+      stream: ext://sys.stdout
+    file:
+      class: logging.handlers.RotatingFileHandler
+      formatter: detailed
+      level: DEBUG
+      filename: logs/pipeline.log
+      maxBytes: 10485760  # 10MB
+      backupCount: 5
+  root:
+    level: INFO
+    handlers:
+      - console
+      - file

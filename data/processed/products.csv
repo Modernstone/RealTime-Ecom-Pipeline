@@ -1,0 +1,36 @@
+product_id,name,description,category,price,cost_price,profit,profit_margin,brand,sku,created_at,updated_at
+PROD0001,,Ergonomic wireless mouse with adjustable DPI and long battery life,Uncategorized,699.0,420.0,279.0,39.91,Logitech,,2024-01-10T08:00:00,2026-08-15T10:30:00
+PROD0002,,RGB backlit mechanical keyboard with blue switches and wrist rest,Uncategorized,1999.0,1200.0,799.0,39.97,Redragon,,2024-01-10T08:00:00,2026-08-20T14:00:00
+PROD0003,,"Multi-port USB-C hub with HDMI, USB 3.0, SD card reader, and PD charging",Uncategorized,2499.0,1500.0,999.0,39.98,Anker,,2024-02-05T08:00:00,2026-07-30T09:00:00
+PROD0004,,"True wireless earbuds with ANC, 30-hour battery life, and IPX5 rating",Uncategorized,1799.0,950.0,849.0,47.19,boAt,,2024-02-20T08:00:00,2026-08-25T11:00:00
+PROD0005,,Waterproof portable speaker with deep bass and 12-hour playtime,Uncategorized,2999.0,1800.0,1199.0,39.98,JBL,,2024-03-01T08:00:00,2026-08-10T16:00:00
+PROD0006,,Premium cotton crew neck t-shirt available in multiple colors,Uncategorized,699.0,350.0,349.0,49.93,Allen Solly,,2024-01-15T08:00:00,2026-08-01T10:00:00
+PROD0007,,Wrinkle-free slim fit formal shirt with spread collar,Uncategorized,1299.0,650.0,649.0,49.96,Van Heusen,,2024-01-15T08:00:00,2026-07-20T12:00:00
+PROD0008,,"Cotton Anarkali kurta set with dupatta, floral print",Uncategorized,1899.0,950.0,949.0,49.97,Biba,,2024-02-10T08:00:00,2026-08-18T14:00:00
+PROD0009,,Classic straight fit denim jeans with mid-rise waist,Uncategorized,2199.0,1100.0,1099.0,49.98,Levi's,,2024-03-05T08:00:00,2026-08-22T09:00:00
+PROD0010,,Comfortable rayon palazzo pants with elasticated waistband,Uncategorized,899.0,450.0,449.0,49.94,W,,2024-03-20T08:00:00,2026-07-15T11:00:00
+PROD0011,,Lightweight running shoes with responsive cushioning and breathable mesh,Uncategorized,2499.0,1400.0,1099.0,43.98,Nike,,2024-01-20T08:00:00,2026-08-28T10:00:00
+PROD0012,,Street-style casual sneakers with rubber outsole,Uncategorized,1999.0,1000.0,999.0,49.97,Puma,,2024-02-15T08:00:00,2026-08-05T15:00:00
+PROD0013,,Genuine leather oxford shoes with cushioned insole,Uncategorized,3499.0,2000.0,1499.0,42.84,Clarks,,2024-03-10T08:00:00,2026-07-25T13:00:00
+PROD0014,,Comfortable flat sandals with cushioned footbed and buckle closure,Uncategorized,899.0,450.0,449.0,49.94,Metro,,2024-04-01T08:00:00,2026-08-12T10:00:00
+PROD0015,,1.5L stainless steel electric kettle with auto shut-off and boil-dry protection,Uncategorized,1299.0,700.0,599.0,46.11,Prestige,,2024-01-25T08:00:00,2026-08-20T11:00:00
+PROD0016,,5-piece non-stick cookware set with glass lids and cool-touch handles,Uncategorized,2999.0,1600.0,1399.0,46.65,Hawkins,,2024-02-08T08:00:00,2026-07-30T14:00:00
+PROD0017,,"King size 100% cotton bedsheet with 2 pillow covers, floral design",Uncategorized,1499.0,750.0,749.0,49.97,Bombay Dyeing,,2024-03-15T08:00:00,2026-08-08T09:00:00
+PROD0018,,LED desk lamp with 3 brightness levels and touch control,Uncategorized,1199.0,600.0,599.0,49.96,Philips,,2024-04-10T08:00:00,2026-08-15T16:00:00
+PROD0019,,"Vitamin C face serum with turmeric for skin brightening, 30ml",Uncategorized,599.0,280.0,319.0,53.26,Mamaearth,,2024-02-01T08:00:00,2026-08-25T10:00:00
+PROD0020,,"Apple cider vinegar shampoo for hair fall control, 300ml",Uncategorized,449.0,200.0,249.0,55.46,Wow Skin Science,,2024-02-18T08:00:00,2026-07-28T12:00:00
+PROD0021,,"Complete makeup kit with foundation, lipstick, kajal, and compact",Uncategorized,1499.0,750.0,749.0,49.97,Lakme,,2024-03-25T08:00:00,2026-08-10T14:00:00
+PROD0022,,6mm thick anti-skid yoga mat with carrying strap,Uncategorized,799.0,380.0,419.0,52.44,Boldfit,,2024-01-30T08:00:00,2026-08-22T11:00:00
+PROD0023,,Kashmir willow cricket bat with full cane handle and toe guard,Uncategorized,1899.0,1000.0,899.0,47.34,SS,,2024-02-12T08:00:00,2026-07-18T15:00:00
+PROD0024,,Adjustable dumbbell set 5kg x 2 with star-lock collars,Uncategorized,1599.0,850.0,749.0,46.84,Kobo,,2024-03-18T08:00:00,2026-08-05T09:00:00
+PROD0025,,Lightweight graphite badminton racket with isometric head shape,Uncategorized,1299.0,650.0,649.0,49.96,Yonex,,2024-04-05T08:00:00,2026-08-28T13:00:00
+PROD0026,,James Clear's guide to building good habits and breaking bad ones,Uncategorized,399.0,180.0,219.0,54.89,Penguin,,2024-01-05T08:00:00,2026-08-30T10:00:00
+PROD0027,,"Morgan Housel's timeless lessons on wealth, greed, and happiness",Uncategorized,349.0,160.0,189.0,54.15,Jaico Publishing,,2024-01-20T08:00:00,2026-08-25T14:00:00
+PROD0028,,Ramachandra Guha's definitive history of post-independence India,Uncategorized,599.0,300.0,299.0,49.92,Picador India,,2024-02-28T08:00:00,2026-07-22T11:00:00
+PROD0029,,Comprehensive textbook on data structures and algorithms using C language,Uncategorized,499.0,250.0,249.0,49.9,McGraw Hill,,2024-03-12T08:00:00,2026-08-18T09:00:00
+PROD0030,,Water-resistant laptop backpack with USB charging port and anti-theft pocket,Uncategorized,1499.0,700.0,799.0,53.3,American Tourister,,2024-01-12T08:00:00,2026-08-20T10:00:00
+PROD0031,,"1L insulated stainless steel bottle, keeps drinks hot/cold for 24 hours",Uncategorized,599.0,280.0,319.0,53.26,Milton,,2024-02-05T08:00:00,2026-08-12T15:00:00
+PROD0032,,UV400 protection metal aviator sunglasses with gradient lenses,Uncategorized,899.0,400.0,499.0,55.51,Fastrack,,2024-03-08T08:00:00,2026-07-28T12:00:00
+PROD0033,,Genuine leather bi-fold wallet with RFID blocking and multiple card slots,Uncategorized,699.0,320.0,379.0,54.22,WildHorn,,2024-04-02T08:00:00,2026-08-15T11:00:00
+PROD0034,,"AMOLED display smartwatch with SpO2, heart rate monitor, and 7-day battery",Uncategorized,3499.0,2000.0,1499.0,42.84,Noise,,2024-05-01T08:00:00,2026-08-28T14:00:00
+PROD0035,,Spacious faux leather tote bag with inner zip pocket and magnetic closure,Uncategorized,1299.0,600.0,699.0,53.81,Lavie,,2024-05-15T08:00:00,2026-08-22T16:00:00
